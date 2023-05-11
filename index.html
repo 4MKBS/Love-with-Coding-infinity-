@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Made By love </title>
+    <style>
+        body{
+            /* color: yellow; */
+            background-color: black;
+            margin: 25px;
+            padding: 15px;
+
+        }
+        #hack{
+            /* background-color:green; */
+           /* position: sticky; */
+           /* border: 10px solid red;
+           border-radius: 10px; */
+           /* display: inline-block; */
+           
+            
+        }
+    </style>
+</head>
+<body>
+    <script>
+        setInterval(()=>{
+            let a=document.createElement("span");
+            a.innerText=" Love With Coding ";
+            a.setAttribute("id","hack");
+            // console.log(Math.floor(Math.random()));
+            document.body.appendChild(a);
+
+            var rand=Math.floor(Math.random()*100);
+            var randomColor = Math.floor(Math.random()*16777215).toString(16);
+            var rColor = Math.floor(Math.random()*46777215).toString(16);
+
+            a.style.padding=`${rand}px`;
+            a.style.margin=`${rand}px`;
+            a.style.fontSize=`${rand-60}px`;
+            a.style.top=`${rand *10}px`;
+            a.style.left=`${rand *10}px`;
+            // a.style.border=`${rand}px #${randomColor}`;
+            a.style.borderRadius=`${rand - 70}px`;
+
+            
+            
+            
+
+            a.style.backgroundColor=`#${randomColor}`;
+            a.style.color=`#${rColor}`;
+             window.scrollBy(0,9);
+        },100)
+    </script>
+</body>
+</html>
